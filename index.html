@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>Project 68</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#Campus_life"></a>Campus life</li>
+                    <li><a href="#achievements"></a>Achievements</li>
+                    <li><a href="#new"></a>Whats New</li>
+                    <li><a href="#Alumni"></a>Alumni</li>
+                    <li><a href="#Contact"></a>Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="anouncement">
+            <marquee id="marquee-style" onmouseover="this.stop();" onmouseout="this.start();">
+                If you have more queries visit wizardschool@gmail.com
+            </marquee>
+        </div>
+        <iframe id="video" src="https://youtu.be/vfFC2OrBfj4"></iframe>
+        <br><br>
+        <div class="container" id="Campus-life">
+            <h2 class="btn btn-primary">Campus life</h2>
+            <div class="row">
+                <div class="travel-MainDiv">
+                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Crete%2C_Nebraska_Sacred_Heart_Church_-_St_James_School.JPG">
+                    <h4 class="text-capitalize"><kbd>school church</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">Was built in 1978</h5>
+                    <p class="text-muted text-left">The church is a very holy church and is liked by many of the students because of its cleaniness and arrangment.</p>
+                </div>
+                <div class="travel-MainDiv">
+                    <img class="img-responsive" src="https://uwm.edu/news/wp-content/uploads/sites/41/2020/12/siver750x500-IMG_7285-750x500.jpg">
+                    <h4 class="text-capitalize"><kbd>school library</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">Was built in 1980</h5>
+                    <p class="text-muted text-left">The library may be small but its different genres of books inspires many of the students to become someone great in life.</p>
+                </div>
+                <div class="travel-MainDiv">
+                    <img class="img-responsive" src="https://yvarchitects.com/wp-content/uploads/2020/11/shs-3-min.jpg">
+                    <h4 class="text-capitalize"><kbd>school auditorium</kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize">Was built in 2017</h5>
+                    <p class="text-muted text-left">The auditorium is a very large one and is built to accompany a lot of students for entertainment</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="achievements">
+            <h2 class="btn btn-danger">Achievements</h2>
+            <div class="bg_primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+                Inter school environment poster
+            </div>
+            <div id="school_achievement1" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="btn btn-info">
+                        <h3>Won by Priya Mukesh</h3>
+                    </div>
+                    <div class="btn btn-info">
+                        <p class="col-lg-3 col-md-3 col-sm-3 col-xs-12">Priya Mukesh a girl from the class 2B astoundingly caught the judges attentions and won the prize of the environmental poster.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+                Inter school football competition
+            </div>
+            <div id="school_achievement1" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="btn btn-info">
+                        <h3>Won by school team</h3>
+                    </div>
+                    <div class="btn btn-info">
+                        <p class="col-lg-3 col-md-3 col-sm-3 col-xs-12">The football team of the school won the finals in the school foootball state championship in the year 2018 by making a whopping 6-2 goals in the match.</p>
+                    </div>
+                </div>
+
+                <div class="bg_primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+                    Inter school science fair
+                </div>
+                <div id="school_achievement1" class="collapse">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="btn btn-info">
+                            <h3>Won by Arjun Sharma</h3>
+                        </div>
+                        <div class="btn btn-info">
+                            <p class="col-lg-3 col-md-3 col-sm-3 col-xs-12">Arjun Sharma a very smart nerd created an awesome solar cooker that focuses sunlight to cook it faster you can even adjust the lens by a switch depending on how fast you want it cooked.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <div class="container" id="new">
+            <h2 class="btn btn-danger">Whats New</h2>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="new1">
+                <h3 class="text-capitalize">a football court</h3>
+                <p>The new football stadium is amazing and it is almost the size of an actual one. It even has some seats for you to sit on and watch the game. They even built it near our new cantene to grab a snack and watch the game.</p>
+                <img class="img-responsive" src="http://akmpublicschool.edu.in/assets/facility/BR-12.jpg">
+            </div>
+            <br>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="new1">
+                <h3 class="text-capitalize">a cantene</h3>
+                <p>The new cantene is fantastic it connects to many of the places in the school like the church and football stadium has lot more seats and tables and connects to the arcade place.</p>
+                <img class="img-responsive" src="https://thumbs.dreamstime.com/z/empty-school-canteen-interior-view-tables-chairs-129080785.jpg">
+            </div>
+            <br>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="new1">
+                <h3 class="text-capitalize">an arcade</h3>
+                <p>The school arcade is one of the most best updates that happened in the school. We have to get good scores in a couple tests then we get to play a couple games in the arcade but there are no prizes. But every month they add a new game so it becomes more fun.</p>
+                <img class="img-responsive" src="https://i2-prod.hampshirelive.news/incoming/article5593541.ece/ALTERNATES/s615/0_SAH_DBR_300621_SouthArcade.jpg">
+            </div>
+        </div>
+        <div class="container" id="Alumni">
+            <h2 class="btn btn-danger">Alumni</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" id="almunilist" data-toggle="modal" data-target="#school_alumni1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Official_portrait_of_the_Prime_Minister_Narendra_Modi%2C_November_2020_%28cropped%29.jpg/800px-Official_portrait_of_the_Prime_Minister_Narendra_Modi%2C_November_2020_%28cropped%29.jpg" class="img-responsive">
+                    <hr>
+                <p class="text-primary">Narendra Modi</p>               
+            </div>
+            <div class="modal-fade" id="school_alumni1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Narendra Modi</h4>
+                        </div>
+                        <br>
+                        <div class="modal-body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Official_portrait_of_the_Prime_Minister_Narendra_Modi%2C_November_2020_%28cropped%29.jpg/800px-Official_portrait_of_the_Prime_Minister_Narendra_Modi%2C_November_2020_%28cropped%29.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">The Indian prime minister Narendra Modi doing several acts of kindness and good deeds to the population of the country</p>
+                            <a href="https://en.wikipedia.org/wiki/Narendra_Modi"><b>To Know More</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" id="almunilist" data-toggle="modal" data-target="#school_alumni2">
+                <img src="https://static01.nyt.com/images/2015/07/28/world/28KALAM-OBIT/28KALAM-OBIT-superJumbo.jpg" class="img-responsive">
+                <hr>
+                <p class="text-primary">Abdul Kalam</p>               
+            </div>
+            <div class="modal-fade" id="school_alumni2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Abdul Kalam</h4>
+                        </div>
+                        <br>
+                        <div class="modal-body">
+                            <img src="https://static01.nyt.com/images/2015/07/28/world/28KALAM-OBIT/28KALAM-OBIT-superJumbo.jpg" class="img-responsive img-modal">
+                            <p class="p_modal">Abdul Kalam was an Indian space scientist who studied about space built the PSLV rocket and even became a former Indian President</p>
+                            <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"><b>To Know More</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container" id="Contact">
+            <div class="page header col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <h2 class="text-capitalize">Contact Us</h2>
+            </div>
+
+            <div id="map">
+                <iframe src="https://www.google.co.in/maps/place/Ekya+School+ITPL/@12.9715352,77.7039023,19z/data=!4m5!3m4!1s0x3bae122a105c24af:0x22fb89606b4b0c43!8m2!3d12.9715496!4d77.704302?hl=en&authuser=0" height="450" frameborder="0"></iframe>
+            </div>
+
+            <div id="details">
+                <img src="data:image/png;base64,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" class="img-responsive img-circle col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3>The of this school is:</h3>
+                <h4>Mr. Xavier</h4>
+                <div class="contact-1">
+                    <a href="mail:school@gmail.com?Subject=Hi">
+                        <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;school@gmail.com</h5>
+                    </a>
+                    <a href="#">
+                        <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;SchoolID</h5>
+                    </a>
+                    <a href="#">
+                        <h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;9916001600</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
